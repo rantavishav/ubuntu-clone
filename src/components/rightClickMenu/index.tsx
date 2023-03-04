@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 interface IRightClickMenuProps {
   active: boolean;
   points: {
@@ -18,32 +20,32 @@ export const RightClickMenu = ({ active, points }: IRightClickMenuProps) => {
         left: points.x,
       }}
     >
-      <a
+      <Link
         rel="noreferrer noopener"
-        href="https://github.com/vivek9patel/vivek9patel.github.io"
+        href="https://github.com/rantavishav/ubuntu-clone"
         target="_blank"
         className="w-full block cursor-default py-0.5 hover:bg-ub-warm-grey hover:bg-opacity-20 mb-1.5"
       >
-        <span className="ml-5">🌟</span>{" "}
-        <span className="ml-2">Star this Project</span>
-      </a>
-      <a
+        <span className="ml-5">🧑‍💻</span>{" "}
+        <span className="ml-2">Project code</span>
+      </Link>
+      <Link
         rel="noreferrer noopener"
-        href="https://github.com/vivek9patel/vivek9patel.github.io/issues"
+        href="https://github.com/rantavishav/ubuntu-clone/issues"
         target="_blank"
         className="w-full block cursor-default py-0.5 hover:bg-ub-warm-grey hover:bg-opacity-20 mb-1.5"
       >
         <span className="ml-5">❗</span>{" "}
         <span className="ml-2">Report bugs</span>
-      </a>
+      </Link>
 
       <div className="flex justify-center w-full">
         <div className=" border-t border-gray-900 py-1 w-2/5"></div>
       </div>
 
-      <a
+      <Link
         rel="noreferrer noopener"
-        href="https://www.linkedin.com/in/vivek9patel/"
+        href="https://www.linkedin.com/in/vishav-ranta-964964194/"
         target="_blank"
         className="w-full block cursor-default py-0.5 hover:bg-ub-warm-grey hover:bg-opacity-20 mb-1.5"
       >
@@ -51,10 +53,10 @@ export const RightClickMenu = ({ active, points }: IRightClickMenuProps) => {
         <span className="ml-2">
           Follow on <strong>Linkedin</strong>
         </span>
-      </a>
-      <a
+      </Link>
+      <Link
         rel="noreferrer noopener"
-        href="https://github.com/vivek9patel"
+        href="https://github.com/rantavishav"
         target="_blank"
         className="w-full block cursor-default py-0.5 hover:bg-ub-warm-grey hover:bg-opacity-20 mb-1.5"
       >
@@ -62,16 +64,16 @@ export const RightClickMenu = ({ active, points }: IRightClickMenuProps) => {
         <span className="ml-2">
           Follow on <strong>Github</strong>
         </span>
-      </a>
-      <a
+      </Link>
+      <Link
         rel="noreferrer noopener"
-        href="mailto:vivek.p9737@gmail.com"
+        href="mailto:rantavishav49@gmail.com"
         target="_blank"
         className="w-full block cursor-default py-0.5 hover:bg-ub-warm-grey hover:bg-opacity-20 mb-1.5"
       >
         <span className="ml-5">📥</span>{" "}
         <span className="ml-2">Contact Me</span>
-      </a>
+      </Link>
 
       <div className="flex justify-center w-full">
         <div className=" border-t border-gray-900 py-1 w-2/5"></div>

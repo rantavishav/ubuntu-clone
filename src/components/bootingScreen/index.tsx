@@ -66,7 +66,7 @@ const BootingScreen = ({
       <div className="text-white mb-4">
         <Link
           className="underline"
-          href="https://www.linkedin.com/in/vivek9patel/"
+          href="https://www.linkedin.com/in/vishav-ranta-964964194/"
           rel="noreferrer noopener"
           target="_blank"
         >
@@ -74,7 +74,7 @@ const BootingScreen = ({
         </Link>
         <span className="font-bold mx-1">|</span>
         <Link
-          href="https://github.com/vivek9patel/vivek9patel.github.io"
+          href="https://github.com/rantavishav"
           rel="noreferrer noopener"
           target="_blank"
           className="underline"
