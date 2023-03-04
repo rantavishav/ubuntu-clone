@@ -1,5 +1,3 @@
-"use client";
-
 import {
   AUDIO_HEADPHONES_SYMBOLIC_SVG,
   BATTERY_GOOD_SYMBOLIC_SVG,
@@ -15,7 +13,7 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
 import Arrow from "../arrow";
-import Slider from "./slider";
+import Slider from "./Slider";
 
 interface IStatusCardProps {
   visible: boolean;
