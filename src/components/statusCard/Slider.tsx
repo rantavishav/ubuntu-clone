@@ -9,7 +9,7 @@ const Slider = ({ onChange, className, name, value }: ISliderProps) => (
   <input
     type="range"
     onChange={onChange}
-    className={className}
+    className={`${className} cursor-pointer`}
     name={name}
     min="0"
     max="100"

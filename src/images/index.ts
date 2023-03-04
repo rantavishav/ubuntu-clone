@@ -1,3 +1,6 @@
+// logo
+export { default as BITMOJI_PNG } from "./logo/bitmoji.png";
+
 // apps
 export { default as BASH_PNG } from "./apps/bash.png";
 export { default as CALC_PNG } from "./apps/calc.png";

@@ -1,6 +1,8 @@
 import { FOLDER_PNG } from "@/images";
 import { StaticImageData } from "next/image";
+import { useState } from "react";
 import Folder from "../folder";
+import Window from "../window";
 import BackgroundImage from "./BackgroundImage";
 
 interface IDesktopProps {
@@ -9,9 +11,15 @@ interface IDesktopProps {
 }
 
 const Desktop = ({ bgImage, changeBackgroundImage }: IDesktopProps) => {
+  const [isWindowOpen, setIsWindowOpen] = useState(false);
+
   const handleFolderOpen = () => {
-    console.log("Folder Open");
+    setIsWindowOpen(true);
   };
+  const closeWindow = () => {
+    setIsWindowOpen(false);
+  };
+
   return (
     <div
       className={
@@ -23,6 +31,9 @@ const Desktop = ({ bgImage, changeBackgroundImage }: IDesktopProps) => {
 
       {/* Folders  */}
       <Folder title="Ranta" image={FOLDER_PNG} onOpenClick={handleFolderOpen} />
+
+      {/* window */}
+      <Window isWindowOpen={isWindowOpen} closeWindow={closeWindow} />
     </div>
   );
 };
